@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #0891b2;
+}
+
+body {
+  line-height: 1.5;
+}
+.printShow {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 24px 16px;
+  }
+
+  .dvidePage {
+    page-break-after: always;
+  }
+
+  aside {
+    display: none;
+  }
+  .printShow {
+    display: flex;
+    grid-gap: 1rem;
+  }
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Preserve grid layout */
+  .lg\:grid-cols-3 {
+    grid-template-columns: 1fr 2fr !important;
+  }
+
+  /* Ensure all content is visible */
+  .min-h-screen {
+    min-height: 0 !important;
+  }
+
+  /* Remove top padding since toolbar is hidden */
+  .pt-16 {
+    padding-top: 0 !important;
+  }
+}
