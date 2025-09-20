@@ -28,7 +28,6 @@ export const Main: React.FC<MainProps> = ({ data, mainColor, language }) => {
           }))}
           mainColor={mainColor}
         />
-        <div className="dvidePage" />
       </Section>
 
       <Section title={t.education} mainColor={mainColor}>
@@ -44,7 +43,7 @@ export const Main: React.FC<MainProps> = ({ data, mainColor, language }) => {
         />
       </Section>
 
-      <Section title={t.certificates} mainColor={mainColor}>
+      {/* <Section title={t.certificates} mainColor={mainColor}>
         <ul className="space-y-2">
           {data.certificates.map((cert, index) => (
             <li key={index} className="flex justify-between items-baseline">
@@ -53,7 +52,7 @@ export const Main: React.FC<MainProps> = ({ data, mainColor, language }) => {
             </li>
           ))}
         </ul>
-      </Section>
+      </Section> */}
 
       <Section title={t.skills} mainColor={mainColor}>
         <div className="flex flex-wrap gap-2">

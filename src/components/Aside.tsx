@@ -13,7 +13,7 @@ export const Aside: React.FC<AsideProps> = ({ data, mainColor, language }) => {
   const t = translations[language].sections;
 
   return (
-    <aside className="lg:col-span-1 space-y-6">
+    <aside className=" space-y-6">
       <div>
         <h2 className="text-xl font-semibold mb-2" style={{ color: mainColor }}>
           {t.about}
@@ -34,7 +34,7 @@ export const Aside: React.FC<AsideProps> = ({ data, mainColor, language }) => {
             <Mail size={16} style={{ color: mainColor }} />
             {data.email}
           </p>
-          <a
+          {/* <a
             href={data.website}
             target="_blank"
             rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export const Aside: React.FC<AsideProps> = ({ data, mainColor, language }) => {
           >
             <Linkedin size={16} style={{ color: mainColor }} />
             {data.linkedin}
-          </a>
+          </a> */}
         </div>
       </div>
     </aside>

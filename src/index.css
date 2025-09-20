@@ -10,7 +10,7 @@ body {
   line-height: 1.5;
 }
 .printShow {
-  display: none;
+  /* display: none; */
 }
 
 @media print {
@@ -23,10 +23,10 @@ body {
     page-break-after: always;
   }
 
-  aside {
+  /* aside {
     display: none;
-  }
-  .printShow {
+  } */
+  /* .printShow {
     display: flex;
     grid-gap: 1rem;
   }
@@ -36,21 +36,21 @@ body {
 
   .grid-cols-3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
+  } */
 
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
-  .print\:hidden {
+  /* .print\:hidden {
     display: none !important;
-  }
+  } */
 
   /* Preserve grid layout */
-  .lg\:grid-cols-3 {
+  /* .lg\:grid-cols-3 {
     grid-template-columns: 1fr 2fr !important;
-  }
+  } */
 
   /* Ensure all content is visible */
   .min-h-screen {

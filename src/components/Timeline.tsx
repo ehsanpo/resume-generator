@@ -45,7 +45,7 @@ export const Timeline: React.FC<TimelineProps> = ({ items, mainColor }) => {
           ` ( ${yearsDiff} ${yearsDiff === 1 ? "year" : "years"} `}
         {monthsDiff > 0
           ? `${yearsDiff < 0 ? "(" : ""}  ${monthsDiff} ${
-              monthsDiff === 1 ? "month" : "months )"
+              monthsDiff === 1 ? "månad" : "månader )"
             }`
           : yearsDiff > 0 && ")"}
       </>
